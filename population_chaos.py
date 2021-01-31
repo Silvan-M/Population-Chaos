@@ -101,7 +101,7 @@ class Creature:
 					# Velocity the agent is moving
 					self.velocity = 0.05
 					# Maximum velocity the creature can walk
-					self.max_velocity = 1
+					self.max_velocity = 0.1
 				else:
 					self.pandemic = False
 
