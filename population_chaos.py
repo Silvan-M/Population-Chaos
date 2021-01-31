@@ -109,7 +109,7 @@ class Creature:
 			if self.initial_prob >= random.random():
 						print('w')
 						self.is_contaminated = True
-			self.position = [random.randint(0,self.range_position[0]),random.randint(0,self.range_position[1])]
+			self.position = [random.uniform(0,self.range_position[0]),random.uniform(0,self.range_position[1])]
 
 
 		def _randomize_angle_velocity(self):
@@ -586,7 +586,7 @@ creatures = []
 auto_generated = 1
 
 # Set starting population size of auto generator
-starting_population = 10
+starting_population = 100
 
 # Specify how many timesteps into the past you should be able to see (0 = disabled)
 last = 0
