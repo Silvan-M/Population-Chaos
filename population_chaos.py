@@ -31,7 +31,7 @@ class MultiplePopulations:
 												prob_death = 0.01, 
 												initial_prob = 0.01,	 
 												hotspot = [5,5],
-												hotspot_prob = 1,
+												hotspot_prob = 0.01,
 												hotspot_sigma = 2))
 		else:
 			for i in range(n):
@@ -171,8 +171,8 @@ class Creature:
 					print(f'delta;{delta_angle}',end = ' ')
 					# Set the	mean and standard deviation for the normal distribution
 					mu, sigma = delta_angle, self.hotspot_sigma
+					
 					# make a choice according to the normal distribution 
-
 					angle = np.random.normal(mu, sigma, 1)
 
 
